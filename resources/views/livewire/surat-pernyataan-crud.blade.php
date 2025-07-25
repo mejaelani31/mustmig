@@ -112,9 +112,9 @@
                 <x-secondary-button wire:click="$set('showingModal', false)">
                     {{ __('Cancel') }}
                 </x-secondary-button>
-                <x-primary-button class="ms-2" wire:click="save" wire:loading.attr="disabled">
+                <x-button class="ms-2" wire:click="save" wire:loading.attr="disabled">
                     {{ __('Save') }}
-                </x-primary-button>
+                </x-button>
             </x-slot>
         </x-dialog-modal>
     </form>
