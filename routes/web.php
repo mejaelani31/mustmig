@@ -15,6 +15,6 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 
-    Route::get('/surat-pernyataan', App\Livewire\SuratPernyataanCrud::class)
+    Route::get('/surat-pernyataan', [\App\Http\Controllers\SuratPernyataanController::class, 'index'])
         ->name('surat-pernyataan');
 });
